@@ -18,7 +18,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, letterpaper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv-edited}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -52,16 +52,16 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo{profile.png}
+\photo{BrianSeymour-NewResume-Square.jpeg}
 \name{Brian C.}{Seymour}
-\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\position{Physicist}
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
 % \mobile{(+82) 10-9030-1843}
 \email{Seymour.BrianC@gmail.com}
 \homepage{www.briancseymour.com}
-\github{BrianCSeymour}
-\linkedin{briancseymour}
+% \github{BrianCSeymour}
+% \linkedin{briancseymour}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -73,7 +73,7 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-% \quote{``Be the change that you want to see in the world."}
+\quote{Research interests: general relativity, tests of modified gravity theories, and gravitational waves.}
 
 
 %-------------------------------------------------------------------------------
@@ -81,13 +81,13 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
+  {Brian C. Seymour~~~·~~~Curriculum Vitae}
   {\thepage}
 
 
@@ -96,13 +96,14 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{cv/education.tex}
-\input{cv/skills.tex}
 \input{cv/experience.tex}
-\input{cv/extracurricular.tex}
+\input{cv/publications.tex}
 \input{cv/honors.tex}
 \input{cv/presentation.tex}
-\input{cv/writing.tex}
-\input{cv/committees.tex}
+\input{cv/skills.tex}
+% \input{cv/extracurricular.tex}
+% \input{cv/writing.tex}
+% \input{cv/committees.tex}
 
 
 %-------------------------------------------------------------------------------
