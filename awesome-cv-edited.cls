@@ -715,6 +715,19 @@
   \end{center}
 }
 
+\newenvironment{cvpublicationsmod}{%
+  % \vspace{\acvSectionContentTopSkip}
+  % \vspace{-2mm}
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    % ---- Changed here ---- !!!!
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}} 
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
 %---------- this allows automatic publication counting -------
 \newcounter{magicrownumbers}
 \newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
