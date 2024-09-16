@@ -808,3 +808,25 @@
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
 }
+
+%-------------------------------------------------------------------------------
+%                editing cventry to convert it to long table
+%  https://github.com/posquit0/Awesome-CV/issues/331
+%-------------------------------------------------------------------------------
+
+% % Define an environment for cventry
+% \newenvironment{cventries_ltb}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \setlength{\LTleft}{0pt}
+%   \setlength{\LTright}{0pt}
+%   \setlength{\LTpre}{0pt}
+%   \setlength{\LTpost}{-5pt}
+%   \begin{longtable}{@{\extracolsep{\fill}} R{3.3cm} L{\textwidth - 3.7cm}}
+%     }{%
+%   \end{longtable}
+% }
+
+% \newcommand*{\addedu}[4]{%
+%   \entrydatestyle{#4} & \entrypositionstyle{#1} \hfill \entrylocationstyle{#3}\\
+%   & \entrytitlestyle{#2} \\
+% }
