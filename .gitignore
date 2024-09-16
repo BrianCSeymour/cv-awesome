@@ -13,3 +13,37 @@ Gemfile.lock
 node_modules
 npm-debug.log*
 vendor/*
+
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.pyo
+*.pyc
+*.bak
+*.swp
+*.aux
+*.log
+*.blg
+*.log
+*.bbl
+*Notes.bib
+*.out
+*.text
+*.bak
+*.sav
+*.bbl
+*-eps-converted-to*
+*.synctex.gz
+*.fdb_latexmk
+*.fls 
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
