@@ -674,6 +674,18 @@
   \end{center}
 }
 
+\newenvironment{cvpresentationsmod}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2mm}
+  \begin{center}
+    \setlength\tabcolsep{0pt}
+    \setlength{\extrarowheight}{0pt}
+    \begin{longtable}{@{\extracolsep{\fill}} C{2.5cm} L{\textwidth - 2.5cm}}
+}{%
+    \end{longtable}
+  \end{center}
+}
+
 
 
 % Define an environment for cvhonor
@@ -702,7 +714,7 @@
 
 
 % Define an environment for cvhonor
-\newenvironment{cvpublicationsmod}{%
+\newenvironment{cvpublications}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
   \begin{center}
@@ -715,22 +727,8 @@
   \end{center}
 }
 
-% \newenvironment{cvpublicationsmod}{%
-%   % \vspace{\acvSectionContentTopSkip}
-%   % \vspace{-2mm}
-%   \begin{center}
-%     \setlength\tabcolsep{0pt}
-%     \setlength{\extrarowheight}{0pt}
-%     % ---- Changed here ---- !!!!
-%     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}} 
-% }{%
-%     \end{tabular*}
-%   \end{center}
-% }
-
 \usepackage{longtable}
-
-\newenvironment{cvpublications}{%
+\newenvironment{cvpublicationsmod}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
   \begin{center}
@@ -837,6 +835,16 @@
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
 }
+
+
+% \usepackage[usenames, dvipsnames]{xcolor}
+% \newcommand{\hang}[1]{\textcolor{red}{#1}}
+% \newcommand{\hy}[1]{\textcolor{red}{#1}}
+\newcommand{\bs}[1]{\textcolor{blue}{#1}}
+\newcommand{\bri}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\al}[1]{\textcolor{Turquoise}{#1}}
+\newcommand{\cj}[1]{\textcolor{Orange}{#1}}
+\newcommand{\citationneeded}[1][]{{\color{red} [citation!]}}
 
 %-------------------------------------------------------------------------------
 %                editing cventry to convert it to long table
