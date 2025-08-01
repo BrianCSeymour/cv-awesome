@@ -73,7 +73,24 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
-\quote{Research interests: general relativity, tests of modified gravity theories, and gravitational waves.}
+\quote{Research interests: general relativity, tests of modified gravity theories, and science with gravitational waves.}
+% \usepackage{datetime}
+% \newdateformat{monthyeardate}{\THEDAY\space \THEYEAR}
+% \newcommand{\shortmonthnamee}[1]{%
+%   \ifcase#1\or
+%   Jan\or Feb\or Mar\or Apr\or May\or Jun\or Jul\or Aug\or Sep\or Oct\or Nov\or Dec%
+%   \fi}
+\usepackage{datetime}
+
+\newcommand{\shortmonthnamee}[1]{%
+  \ifcase#1%
+  \or Jan.\or Feb.\or Mar.\or Apr.\or May\or Jun.\or Jul.\or Aug.\or Sep.\or Oct.\or Nov.\or Dec.%
+  \fi%
+}
+
+\renewcommand{\today}{%
+  \shortmonthnamee{\month}~\twodigit{\day} \the\year%
+}
 
 
 %-------------------------------------------------------------------------------
@@ -86,7 +103,7 @@
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
 \makecvfooter
-  {\today}
+  {Updated: \today}
   {Brian C. Seymour~~~·~~~Curriculum Vitae}
   {\thepage}
 

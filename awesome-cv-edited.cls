@@ -677,13 +677,14 @@
 \newenvironment{cvpresentationsmod}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
-  \begin{center}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-    \begin{longtable}{@{\extracolsep{\fill}} C{2.5cm} L{\textwidth - 2.5cm}}
-}{%
-    \end{longtable}
-  \end{center}
+  \centering 
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \setlength{\LTpost}{0pt}
+  \begin{longtable}{@{\extracolsep{\fill}} C{2.5cm} L{\textwidth - 2.5cm}}
+  }{%
+  \end{longtable}
+  
 }
 
 
@@ -728,16 +729,30 @@
 }
 
 \usepackage{longtable}
+% \newenvironment{cvpublicationsmod}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \vspace{-2mm}
+%   \begin{center}
+%     \setlength\tabcolsep{0pt}
+%     \setlength{\extrarowheight}{0pt}
+%     \begin{longtable}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}} 
+% }{%
+%     \end{longtable}
+%   \end{center}
+% }
 \newenvironment{cvpublicationsmod}{%
   \vspace{\acvSectionContentTopSkip}
   \vspace{-2mm}
-  \begin{center}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-    \begin{longtable}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}} 
+  \centering
+  % Use  instead of \begin{center}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  % \setlength{\LTpre}{0pt}
+  \setlength{\LTpost}{0pt}
+  \begin{longtable}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}} 
 }{%
-    \end{longtable}
-  \end{center}
+  \end{longtable}
+  
 }
 
 
