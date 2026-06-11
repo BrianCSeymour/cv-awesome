@@ -9,7 +9,11 @@
 \usepackage{fontspec}
 
 % Define shortcut to load the Font Awesome font.
-\newfontfamily{\FA}{FontAwesome}
+% Note: \FA is defined by awesome-cv-edited.cls (with the correct Path=\@fontdir)
+% AFTER \@fontdir has been set. Defining it here at package-load time runs before
+% \@fontdir exists and breaks compilation, so we leave it to the class.
+% \newfontfamily{\FA}{FontAwesome}
+% \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
 % Generic command displaying an icon by its name.
 \newcommand*{\faicon}[1]{{
   \FA\csname faicon@#1\endcsname
